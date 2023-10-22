@@ -1,0 +1,41 @@
+{
+  "name": "bemex",
+  "version": "1.0.0",
+  "description": "BeMex is a web application designed to assist individuals in assessing and enhancing their connection with Mexico. It offers dynamic content related to Mexican culture, history, and civics, making learning an engaging and seamless experience. With web-based accessibility, users can practice for naturalization assessments on the go",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dassantoss/BeMex.git"
+  },
+  "keywords": [
+    "web",
+    "application",
+    "Mexican",
+    "culture",
+    "naturalization",
+    "React",
+    "Node.js",
+    "MySQL",
+    "Express",
+    "history",
+    "civics",
+    "culture",
+    "test",
+    "practice",
+    "interactive",
+    "learning"
+  ],
+  "author": "Luis Alberto Ortiz Hurtado, Tania Cauich, Javier Uc Ix, Santiago Echeverri L.",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/dassantoss/BeMex/issues"
+  },
+  "homepage": "https://github.com/dassantoss/BeMex#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  }
+}
