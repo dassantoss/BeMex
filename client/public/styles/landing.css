@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 120px;
+    display: block;
+}
+
+.nav .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav .menu a:hover {
+    background: #555;
+}
+
+section {
+    padding: 2rem;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.social-media img:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav .menu a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 1rem; /* Adjust the size as needed */
+    }
+}
+
+/* Additional styles for intro, features, and contact */
+.intro-background {
+    background: url('../images/.png') no-repeat center center/cover;
+    color: #000000;
+}
+
+.intro-content {
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.intro-image, .feature-image, .about-image, .social-icon {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.features-container article {
+    max-width: 300px;
+}
+
+#cta-button {
+    background: #006847; 
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer social icons */
+.social-icon {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.social-media-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media-header .social-icon {
+    width: 24px; /* or your preferred size */
+    height: 24px; /* or your preferred size */
+    margin-left: 10px;
+}
