@@ -26,7 +26,6 @@ nav {
 
 .logo {
     height: 120px;
-    display: block;
 }
 
 .nav .menu a {
@@ -80,30 +79,9 @@ footer {
     opacity: 0.8;
 }
 
-@media (max-width: 600px) {
-    .features-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav .menu a {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .logo {
-        margin-bottom: 1rem; /* Adjust the size as needed */
-    }
-}
-
 /* Additional styles for intro, features, and contact */
 .intro-background {
-    background: url('../images/.png') no-repeat center center/cover;
+    background: url('../images/background.png') no-repeat center center/cover;
     color: #000000;
 }
 
@@ -152,7 +130,58 @@ footer {
 }
 
 .social-media-header .social-icon {
-    width: 24px; /* or your preferred size */
-    height: 24px; /* or your preferred size */
+    width: 24px;
+    height: 24px;
     margin-left: 10px;
+}
+
+/* Media Query for mobile devices */
+@media (max-width: 600px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #444; /* Adds a visual separator */
+    }
+    
+    .logo {
+        height: 120px;
+        margin-bottom: 0.5rem;
+    }
+    
+    header {
+        text-align: center;
+    }
+
+    .social-media img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .social-media-header .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Adjust padding and margins for smaller screens */
+    section, .intro-content {
+        padding: 1rem;
+    }
 }
