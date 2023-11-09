@@ -43,9 +43,9 @@ CREATE TABLE bemexdb.QuestionsPracticed
 
 CREATE TABLE bemexdb.Requirements
              (IDRequirement INT AUTO_INCREMENT PRIMARY KEY,
-              TitleRequirement VARCHAR(255) NOT NULL,
-              TextRequirement TEXT NOT NULL,
-              SourceOfInformation VARCHAR(255),
+              CategoryRequirement VARCHAR(255) NOT NULL,
+              Description TEXT NOT NULL,
+              Copies INT,
               IsCompleted BOOLEAN NOT NULL,
               UserID INT,
               FOREIGN KEY (UserID) REFERENCES bemexdb.User(UserID));
