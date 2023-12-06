@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -42,12 +43,6 @@ section {
     padding: 2rem;
 }
 
-.features-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 article {
     flex: 1;
     min-width: 200px;
@@ -60,6 +55,85 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+.intro-background {
+    background: url('../images/welcome.png') no-repeat center center/cover;
+    color: #000000;
+}
+
+.intro-content {
+    max-width: 600px;
+    padding: 1rem;
+    color: #fff;
+    height: 400px;
+}
+
+.intro-content h1,
+.intro-content button,
+.intro-content p {
+    margin-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Ajusta el valor alpha según la opacidad deseada */
+    padding: 0.5rem; /* Ajusta el relleno según tu diseño */
+    color: #fff;
+}
+
+.intro-image, .social-icon {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-image {
+    max-width: 120px;
+    height: auto;
+}
+
+.features-container article {
+    max-width: 300px;
+}
+
+.about-background {
+    background: url('../images/people.png') no-repeat center center/cover;
+    color: #000;
+}
+
+.about-container {
+    max-width: 600px;
+    padding: 2rem;
+    height: 400px;
+}
+
+.about-container h2,
+.about-container p {
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alpha según la opacidad deseada */
+    padding: 0.5rem; /* Ajusta el relleno según tu diseño */
+    color: #fff;
+}
+
+.about-image {
+    max-width: 400px;
+    height: auto;
+}
+
+#cta-button {
+    background: #006847; 
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#cta-button:hover {
+    transform: scale(1.1);
 }
 
 .social-media {
@@ -77,41 +151,6 @@ footer {
 
 .social-media img:hover {
     opacity: 0.8;
-}
-
-/* Additional styles for intro, features, and contact */
-.intro-background {
-    background: url('../images/background.png') no-repeat center center/cover;
-    color: #000000;
-}
-
-.intro-content {
-    max-width: 500px;
-    padding: 2rem;
-}
-
-.intro-image, .feature-image, .about-image, .social-icon {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.features-container article {
-    max-width: 300px;
-}
-
-#cta-button {
-    background: #006847; 
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-#cta-button:hover {
-    transform: scale(1.1);
 }
 
 /* Footer social icons */
