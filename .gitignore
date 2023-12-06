@@ -422,3 +422,13 @@ FodyWeavers.xsd
 *.sln.iml
 
 AWS/
+SSL/
+*.env*
+.vscode/settings.json
+*build*
+server/db/seeds/AnswerTypesData.json
+server/db/seeds/RequirementsData.json
+server/db/seeds/StudyData.json
+server/db/seeds/training/classifier.json
+server/db/seeds/training/trainingData.json
+.vscode/launch.json
