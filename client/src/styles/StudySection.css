@@ -1,0 +1,55 @@
+/* StudySection.css */
+.study-section {
+	padding: 20px;
+  }
+  
+  .category-container {
+	margin-bottom: 10px;
+  }
+  
+  .button {
+	background-color: #006847;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 5px 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+  }
+  
+  .button:hover, .button.active {
+	background-color: #CE1126;
+  }
+  
+  .questions {
+	margin-top: 10px;
+	text-align: justify;
+  }
+  
+  .question-item {
+	background-color: #f0f0f0;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 5px;
+  }
+
+  .hidden {
+	display: none;
+  }
+
+  .bulb-icon {
+	width: 60px;
+	height: auto;
+	margin-right: 5px;
+  }
+  
+  .learning-tips {
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-style: italic;
+	color: #666;
+  }
+  
