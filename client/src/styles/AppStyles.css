@@ -1,0 +1,177 @@
+/* AppStyles.css */
+.App {
+	text-align: center;
+  }
+  
+  .App-logo {
+	height: 40vmin;
+	pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+	  animation: App-logo-spin infinite 20s linear;
+	}
+  }
+  
+  .App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+  }
+  
+  .App-link {
+	color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+
+/* Estilos generales */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	color: #006847;
+}
+
+/* Header */
+header {
+	background: #333;
+	color: #fff;
+	padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+	height: 120px;
+}
+
+.nav .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav .menu a:hover {
+    background: #555;
+}
+
+/* Footer */
+footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.social-media img {
+	width: 40px;
+	height: 40px;
+	margin: 0 10px;
+}
+
+.social-media img:hover {
+	opacity: 0.8;
+}
+
+/* Estilos para el contenido principal */
+.MyApp-logo {
+	height: 120px;
+	margin: 20px 0;
+}
+
+/* Pantalla Welcome */
+.welcome-container {
+	text-align: center;
+	padding: 20px;
+  }
+  
+  .welcome-image {
+	max-width: 600px; /* O cualquier ancho máximo que prefieras */
+	height: auto; /* Esto mantendrá la proporción de aspecto de la imagen */
+	display: block; /* Esto puede ayudar a centrar la imagen si se combina con margin */
+	margin: 20px auto; /* Esto centra la imagen horizontalmente */
+  }
+
+/* Responsive Media Query */
+@media screen and (max-width: 600px) {
+	nav ul li {
+	  float: none;
+	}
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav .menu a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #444; /* Adds a visual separator */
+    }
+    
+    .logo {
+        height: 120px;
+        margin-bottom: 0.5rem;
+    }
+    
+    header {
+        text-align: center;
+    }
+
+    .social-media img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .social-media-header .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Adjust padding and margins for smaller screens */
+    section, .intro-content {
+        padding: 1rem;
+    }
+}

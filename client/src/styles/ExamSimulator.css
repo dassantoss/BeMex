@@ -1,0 +1,114 @@
+.exam-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .timer {
+	font-size: 1.5rem;
+	color: red;
+	margin-bottom: 20px;
+  }
+  
+  .question {
+	margin-bottom: 15px;
+  }
+  
+  .option {
+	display: block;
+	margin: 10px 0;
+	padding: 8px 16px;
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+	background-color: #e7e7e7;
+  }
+
+  .option.correct {
+	background-color: #d4edda; /* Verde para respuestas correctas */
+	color: #155724; /* Texto oscuro para mejor contraste */
+	font-weight: bold;
+  }
+  
+  .option.incorrect {
+	background-color: #f8d7da; /* Rojo para respuestas incorrectas */
+	color: #721c24; /* Texto oscuro para mejor contraste */
+	font-weight: bold;
+  }
+  
+  .option.selected {
+	background-color: #cce5ff; /* Azul para respuesta seleccionada */
+	color: #004085; /* Texto oscuro para mejor contraste */
+	font-weight: bold;
+  }
+  
+  .option:disabled {
+	cursor: not-allowed;
+	opacity: 0.65;
+  }
+  
+  .selected {
+	background-color: #add8e6;
+  }
+  
+  button {
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: #006847;
+	color: #006847;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+  }
+  
+  button:hover {
+	background-color: #004f2f;
+  }
+  
+  button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+  }
+
+  .finish-exam-btn, .restart-exam-btn, .premium-offer-btn {
+	background-color: #006847;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 5px 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+  }
+  
+  .finish-exam-btn:hover, .restart-exam-btn:hover, .premium-offer-btn:hover {
+	background-color: #CE1126;
+  }
+  
+  .premium-offer-btn {
+	display: block;
+	margin-top: 20px;
+	text-decoration: none;
+	text-align: center;
+  }
+
+  .score-high {
+	color: #007E33; /* Verde para puntuaciones altas */
+  }
+
+  .score-low {
+	color: #CE1126; /* Rojo para puntuaciones bajas */
+  }
+
+  .results-container {
+	/* ... (otros estilos si son necesarios) ... */
+  }
