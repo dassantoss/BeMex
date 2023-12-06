@@ -1,0 +1,88 @@
+/* RequirementList.css */
+.requirementList {
+	padding: 20px;
+  }
+
+  .category-container {
+	margin-bottom: 10px;
+  }
+  
+.requirement {
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	margin: 5px, 0;
+	width: 100%;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+.requirement.completed {
+	background-color: #e7f5e9;
+  }
+
+.requirement-container {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.requirement-header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	background-color: #ddd;
+}
+
+.requirement-title {
+	flex-grow: 1;
+	font-weight: bold;
+}
+
+.requirement-copies {
+	text-align: right;
+	color: #006847;
+  }
+
+.requirement-content {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.requirement-content.active {
+	display: block; /* Muestra el contenido cuando está activo */
+}
+
+.requirement-text {
+	margin-right: auto;
+  }
+
+.costs-info {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.costs-info a {
+	color: #CE1126;
+}
+
+.button {
+	background-color: #006847;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 5px 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+  }
+
+.button:hover, .button.active {
+	background-color: #CE1126;
+}
+
+/* Utilizando la misma lógica de 'hidden' de StudySection.css */
+.hidden {
+	display: none;
+}

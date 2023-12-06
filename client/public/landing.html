@@ -9,7 +9,9 @@
 <body>
     <header>
         <nav class="nav">
-            <img src="images/logo.png" alt="BeMex Logo" class="logo">
+            <a href="landing.html">
+                <img src="images/logo.png" alt="BeMex Logo" class="logo">
+            </a>
             <div class="menu">
                 <a href="#intro">Home</a>
                 <a href="#features">Features</a>
@@ -17,10 +19,8 @@
                 <a href="#contact">Contact</a>
             </div>
 			<div class="social-media-header">
-                <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
-                <a href="https://www.twitter.com/yourprofile" target="_blank"><img src="images/twitter.png" alt="Twitter" class="social-icon"></a>
-                <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
-				<a href="https://www.youtube.com/yourchannel" target="_blank"><img src="images/youtube.png" alt="YouTube" class="social-icon"></a>
+                <a href="https://www.facebook.com/bemexcitizenship" target="_blank"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com/bemexcitizenship/" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
 				<a href="https://wa.me/+529992965121" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp" class="social-icon"></a>
             </div>
         </nav>
@@ -28,52 +28,59 @@
     
     <section id="intro" class="intro-background">
         <div class="intro-content">
-            <h1>Welcome to BeMex</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae justo condimentum, molestie lorem eu, ullamcorper arcu.</p>
-            <button id="cta-button">Gate Way Mexico!</button>
+            <h1>Wélcome to BeMex</h1>
+            <p>Streamlining your path to Mexican citizenship. Powered by AI and advanced tech, this app offers an all-in-one solution for naturalization, featuring detailed guides, comprehensive study materials, and a realistic exam simulator.</p>
+            <button id="cta-button" onclick="window.location.href='https://be-mex.com/requirements'"" type="button">Gate Way to Mexico!</button>
         </div>
-        <img src="images/welcome.png" alt="Digital Welcome" class="intro-image">
     </section>
     
     <section id="features">
         <h2>Core Features</h2>
         <div class="features-container">
             <article>
-                <img src="images/bemex.png" alt="Requirements" class="feature-image">
+                <a href="https://be-mex.com/requirements">
+                    <img src="images/requirements.png" alt="Requirements" class="feature-image">
+                </a>
                 <h3>Requirements</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Tailored guidance on the specific criteria for various types of naturalization in Mexico.</p>
             </article>
             <article>
-                <img src="images/bemex.png" alt="Study Materials" class="feature-image">
+                <a href="https://be-mex.com/study">
+                    <img src="images/study.png" alt="Study Materials" class="feature-image">
+                </a>
                 <h3>Study Materials</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Comprehensive resources to prepare you for the naturalization exam, including detailed guides in Spanish.</p>
             </article>
             <article>
-                <img src="images/bemex.png" alt="Security" class="feature-image">
+                <a href="https://be-mex.com/exam-simulator">
+                    <img src="images/examsimulator.png" alt="Security" class="feature-image">
+                </a>
                 <h3>Exam Simulator</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>A realistic practice environment with the actual questions from the Mexican naturalization exam, helping you test your readiness and gain confidence.</p>
             </article>
         </div>
     </section>
     
-    <section id="about">
-        <h2>About Us</h2>
-        <img src="images/people.png" alt="BeMex Team" class="about-image">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel dolor nulla. Sed euismod, nisl vel tincidunt elementum, ligula nunc.</p>
+    <section id="about" class="about-background">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>A dedicated team combining tech innovation and legal expertise, committed to connecting cultures through technology.</p>
+            <p><b>Our Mission:</b>To make Mexican naturalization clear and accessible for everyone, utilizing technology to simplify the process.</p>
+            <p><b>Our Vision:</b>To be the foremost digital resource for Mexican citizenship, breaking down complex procedures with user-friendly tools.</p>
+        </div>
     </section>
 
     <footer>
-        <p>Contact us:</p>
-        <p>hello@be-mex.com</p>
-        <div class="social-media">
-            <img src="images/facebook.png" alt="Facebook" class="social-icon">
-            <img src="images/twitter.png" alt="Twitter" class="social-icon">
-            <img src="images/instagram.png" alt="Instagram" class="social-icon">
-			<img src="images/youtube.png" alt="Instagram" class="social-icon">
-			<img src="images/whatsapp.png" alt="Whatsapp" class="social-icon">
-        </div>
+        <section id="contact">
+            <p>Contact us:</p>
+            <p><a href="mailto:hello@be-mex.com">hello@be-mex.com</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/bemexcitizenship" target="_blank"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
+                <a href="https://www.instagram.com/bemexcitizenship/" target="_blank"><img src="images/instagram.png" alt="Instagram" class="social-icon"></a>
+                <a href="https://wa.me/+529992965121" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp" class="social-icon"></a>
+            </div>
+        </section>
     </footer>
-    
     <script src="js/landing.js"></script>
 </body>
 </html>
