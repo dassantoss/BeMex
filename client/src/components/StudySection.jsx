@@ -14,6 +14,7 @@ function StudySection() {
   useEffect(() => {
     // Fetch study materials from the API on component mount
     axios.get('https://be-mex.com/api/study-materials')
+    // axios.get(`${process.env.REACT_APP_API_URL}/api/study-materials`)
       .then((response) => {
         setStudyCategories(response.data);
       })

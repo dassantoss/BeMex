@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    text-align: center;
 }
 
 header {
@@ -51,10 +51,20 @@ article {
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 .intro-background {
@@ -170,6 +180,64 @@ footer {
     border-radius: 0.4rem;
     z-index: 10; /* Etiqueta esté sobre otros elementos */
   }
+
+/* Estilos para la página de Política de Privacidad */
+.privacy-policy-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+  }
+  
+  /* Estilos para la página de Términos de Uso */
+.terms-of-use-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Consentimiento de Cookies Banner */
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee; /* Color de fondo */
+    padding: 10px;
+    text-align: center;
+    display: none; /* Oculto por defecto */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+  }
+  
+  .cookie-consent-banner p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+  
+  .cookie-consent-banner button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #006847; /* Color verde para el botón */
+    color: white; /* Color del texto en el botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor tipo puntero para indicar que es clickeable */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+  }
+  
+  .cookie-consent-banner button:hover {
+    background-color: #004f2a; /* Un tono más oscuro de verde para el hover */
+  }  
 
 .social-media {
     display: flex;
