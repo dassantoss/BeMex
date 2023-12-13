@@ -85,6 +85,16 @@ footer {
 	padding: 1rem 0;
 }
 
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 .social-media {
 	display: flex;
 	justify-content: center;
