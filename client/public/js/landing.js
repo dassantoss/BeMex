@@ -18,4 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
       ctaButton.style.transform = 'scale(1)';
     }, 200);
   });
+
+  // Cookie Consent Banner logic
+  var consent = localStorage.getItem('cookieConsent');
+  if (consent !== 'given') {
+    document.getElementById('cookie-consent-banner').style.display = 'block';
+  }
+
+  document.getElementById('accept-cookie-consent').onclick = function() {
+    localStorage.setItem('cookieConsent', 'given');
+    document.getElementById('cookie-consent-banner').style.display = 'none';
+  };
 });

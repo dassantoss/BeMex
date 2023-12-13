@@ -62,6 +62,10 @@ function App() {
               <img src={whatsappIcon} alt="WhatsApp" className="social-icon" />
             </a>
           </div>
+          <div className="footer-links">
+            <a href="/policy.html" className="footer-link" target="_blank">Privacy Policy</a>
+            <a href="/terms-of-use.html" className="footer-link" target="_blank">Terms of Use</a>
+          </div>
         </footer>
       </div>
     </Router>
