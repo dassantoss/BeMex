@@ -18,6 +18,7 @@ function ExamSimulator() {
   const loadQuestions = async () => {
     try {
       const response = await axios.get('https://be-mex.com/api/exam-questions');
+      // const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/exam-questions`);
       setQuestions(response.data);
     } catch (error) {
       // eslint-disable-next-line no-console
